@@ -1,0 +1,3494 @@
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and export to LaTeX again.
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./AlgebraLineal_images/} }
+
+\begin{document}
+
+\label{T_89FDB9C5}
+\matlabtitle{Algebra Lineal}
+
+
+\label{H_37F35C54}
+\matlabheadingthree{Ejemplos de manejar matrices}
+
+\begin{par}
+\begin{flushleft}
+\includegraphics[width=\maxwidth{40.642247867536376em}]{image_0}\includegraphics[width=\maxwidth{41.54540893125941em}]{image_1}
+\end{flushleft}
+\end{par}
+
+
+\begin{par}
+\begin{flushleft}
+entendiendo la multiplicacion
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+C2 = 
+    $\displaystyle \left(\begin{array}{ccc}
+b_{1,1} \,\bar{a_{1,1} } +b_{2,1} \,\bar{a_{1,2} } +b_{3,1} \,\bar{a_{1,3} }  & b_{1,2} \,\bar{a_{1,1} } +b_{2,2} \,\bar{a_{1,2} } +b_{3,2} \,\bar{a_{1,3} }  & b_{1,3} \,\bar{a_{1,1} } +b_{2,3} \,\bar{a_{1,2} } +b_{3,3} \,\bar{a_{1,3} } \\
+b_{1,1} \,\bar{a_{2,1} } +b_{2,1} \,\bar{a_{2,2} } +b_{3,1} \,\bar{a_{2,3} }  & b_{1,2} \,\bar{a_{2,1} } +b_{2,2} \,\bar{a_{2,2} } +b_{3,2} \,\bar{a_{2,3} }  & b_{1,3} \,\bar{a_{2,1} } +b_{2,3} \,\bar{a_{2,2} } +b_{3,3} \,\bar{a_{2,3} } \\
+b_{1,1} \,\bar{a_{3,1} } +b_{2,1} \,\bar{a_{3,2} } +b_{3,1} \,\bar{a_{3,3} }  & b_{1,2} \,\bar{a_{3,1} } +b_{2,2} \,\bar{a_{3,2} } +b_{3,2} \,\bar{a_{3,3} }  & b_{1,3} \,\bar{a_{3,1} } +b_{2,3} \,\bar{a_{3,2} } +b_{3,3} \,\bar{a_{3,3} } 
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\label{H_40A108B2}
+\matlabheading{Tarea 1}
+
+\label{H_B89A859A}
+\matlabheadingthree{Ej. 1}
+
+
+\begin{par}
+\begin{flushleft}
+a)  
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccccc}
+2 & -4 & 12 & -10 & 58\\
+-1 & 2 & -3 & 2 & -14\\
+2 & -4 & 9 & -6 & 44
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+-1 & 2 & -3 & 2 & -14\\
+2 & -4 & 12 & -10 & 58\\
+2 & -4 & 9 & -6 & 44
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & -2 & 14\\
+2 & -4 & 12 & -10 & 58\\
+2 & -4 & 9 & -6 & 44
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & -2 & 14\\
+0 & 0 & 6 & -6 & 30\\
+2 & -4 & 9 & -6 & 44
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & -2 & 14\\
+0 & 0 & 6 & -6 & 30\\
+0 & 0 & 3 & -2 & 16
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & -2 & 14\\
+0 & 0 & 0 & -2 & -2\\
+0 & 0 & 3 & -2 & 16
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & -2 & 14\\
+0 & 0 & 3 & -2 & 16\\
+0 & 0 & 0 & -2 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & -2 & 14\\
+0 & 0 & 3 & 0 & 18\\
+0 & 0 & 0 & -2 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 3 & 0 & 16\\
+0 & 0 & 3 & 0 & 18\\
+0 & 0 & 0 & -2 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A9 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 0 & 0 & -2\\
+0 & 0 & 3 & 0 & 18\\
+0 & 0 & 0 & -2 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A10 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 0 & 0 & -2\\
+0 & 0 & 1 & 0 & 6\\
+0 & 0 & 0 & -2 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A11 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 0 & 0 & -2\\
+0 & 0 & 1 & 0 & 6\\
+0 & 0 & 0 & 1 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -2 & 0 & 0 & -2\\
+0 & 0 & 1 & 0 & 6\\
+0 & 0 & 0 & 1 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+queda una ecuacion con 2 incognitas (not sure que pedo) 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+comprobe qeu estuviera bien con rref
+\end{flushleft}
+\end{par}
+
+
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+3 & -3 & 3 & 9\\
+2 & -1 & 4 & 7\\
+3 & -5 & -1 & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 1 & 3\\
+2 & -1 & 4 & 7\\
+3 & -5 & -1 & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 1 & 3\\
+0 & 1 & 2 & 1\\
+3 & -5 & -1 & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 1 & 3\\
+0 & 1 & 2 & 1\\
+0 & -2 & -4 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 4\\
+0 & 1 & 2 & 1\\
+0 & -2 & -4 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 4\\
+0 & 1 & 2 & 1\\
+0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 4\\
+0 & 1 & 2 & 1\\
+0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+mismo caso que el a)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\begin{par}
+\begin{flushleft}
+c)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+3 & -3 & 3 & 9\\
+2 & -1 & 4 & 7\\
+3 & -5 & -1 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 1 & 3\\
+2 & -1 & 4 & 7\\
+3 & -5 & -1 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 1 & 3\\
+0 & 1 & 2 & 1\\
+3 & -5 & -1 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 1 & 3\\
+0 & 1 & 2 & 1\\
+0 & -2 & -4 & -3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 4\\
+0 & 1 & 2 & 1\\
+0 & -2 & -4 & -3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 4\\
+0 & 1 & 2 & 1\\
+0 & 0 & 0 & -1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 4\\
+0 & 1 & 2 & 1\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 0\\
+0 & 1 & 2 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+Contradiccion en el ultimo row por tanto no es consistente
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\label{H_54605C4E}
+\matlabheadingthree{Ej 2}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccccc}
+2 & 3 & 1 & 0 & 5\\
+5 & 7 & -4 & 0 & 0\\
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+0 & 3 & 1 & 38 & 75\\
+5 & 7 & -4 & 0 & 0\\
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+5 & 7 & -4 & 0 & 0\\
+0 & 3 & 1 & 38 & 75\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 7 & -4 & 95 & 175\\
+0 & 3 & 1 & 38 & 75\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 3 & 1 & 38 & 75\\
+0 & 7 & -4 & 95 & 175\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0\\
+0 & 7 & -4 & 95 & 175\\
+0 & 3 & 1 & 38 & 75
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0\\
+0 & 0 & -4 & 4 & 0\\
+0 & 3 & 1 & 38 & 75
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0\\
+0 & 0 & -4 & 4 & 0\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 1 & -1 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A9 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 13 & 25\\
+0 & 0 & 1 & -1 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+ya no se que mas \textbf{aqui hay algo qeu teines que corregir lo antes posible}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\begin{par}
+\begin{flushleft}
+respuesta alternativa
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+q1 = 
+    $\displaystyle x=19\,t$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+q2 = 
+    $\displaystyle y=25-14\,t$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+q3 = 
+    $\displaystyle z=t$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+q4 = 
+    $\displaystyle 2\,x+3\,y+z=5$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+q5 = 
+    $\displaystyle 5\,x+7\,y-4\,z=0$
+\end{matlabsymbolicoutput}
+\begin{matlaboutput}
+ 
+ans =
+ 
+Empty sym: 0-by-1
+ 
+\end{matlaboutput}
+\begin{matlaboutput}
+ 
+ans =
+ 
+Empty sym: 0-by-1
+ 
+\end{matlaboutput}
+\begin{matlaboutput}
+ 
+ans =
+ 
+Empty sym: 0-by-1
+ 
+\end{matlaboutput}
+\begin{matlaboutput}
+ 
+ans =
+ 
+Empty sym: 0-by-1
+ 
+\end{matlaboutput}
+
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+2 & 5 & 9 & 3 & 0 & 0 & -1\\
+1 & 2 & 4 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+1 & 2 & 4 & 0 & 0 & 0 & 1\\
+2 & 5 & 9 & 3 & 0 & 0 & -1\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 2 & 4 & 0 & 0 & 19 & 36\\
+2 & 5 & 9 & 3 & 0 & 0 & -1\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 2 & 4 & 0 & 0 & 19 & 36\\
+0 & 5 & 9 & 3 & 0 & 38 & 69\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 5 & 9 & 3 & 0 & 38 & 69\\
+0 & 2 & 4 & 0 & 0 & 19 & 36\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 9 & 3 & -5 & 38 & 69\\
+0 & 2 & 4 & 0 & 0 & 19 & 36\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 9 & 3 & -5 & 38 & 69\\
+0 & 0 & 4 & 0 & -2 & 19 & 36\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & -1 & 0 & -1 & -3 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 9 & 3 & -5 & 38 & 69\\
+0 & 0 & 4 & 0 & -2 & 19 & 36\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 4 & 0 & -2 & 19 & 36\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 9 & 3 & -5 & 38 & 69
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A9 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 0 & -6 & 7 & 48\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 9 & 3 & -5 & 38 & 69
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A10 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 0 & -6 & 7 & 48\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 3 & -14 & 11 & 96
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A11 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & -6 & 7 & 48\\
+0 & 0 & 0 & 3 & -14 & 11 & 96
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A12 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & -6 & 7 & 48\\
+0 & 0 & 0 & 0 & -14 & 8 & 96
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A13 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & -\frac{7}{6} & -8\\
+0 & 0 & 0 & 0 & -14 & 8 & 96
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A14 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & -\frac{7}{6} & -8\\
+0 & 0 & 0 & 0 & 0 & -\frac{25}{3} & -16
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A15 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 0 & \frac{7}{6} & 8\\
+0 & 0 & 1 & 0 & 1 & 3 & -3\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & -\frac{7}{6} & -8\\
+0 & 0 & 0 & 0 & 0 & -\frac{25}{3} & -16
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A16 = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & -19 & -35\\
+0 & 1 & 0 & 0 & 0 & \frac{7}{6} & 8\\
+0 & 0 & 1 & 0 & 0 & \frac{25}{6} & 5\\
+0 & 0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1 & -\frac{7}{6} & -8\\
+0 & 0 & 0 & 0 & 0 & -\frac{25}{3} & -16
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & \frac{37}{25}\\
+0 & 1 & 0 & 0 & 0 & 0 & \frac{144}{25}\\
+0 & 0 & 1 & 0 & 0 & 0 & -3\\
+0 & 0 & 0 & 1 & 0 & 0 & -\frac{48}{25}\\
+0 & 0 & 0 & 0 & 1 & 0 & -\frac{144}{25}\\
+0 & 0 & 0 & 0 & 0 & 1 & \frac{48}{25}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\label{H_F5A554A1}
+\matlabheadingthree{Ej 3}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -2 & 4 & 12\\
+2 & -1 & 5 & 18\\
+-1 & 3 & -3 & -8
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -2 & 4 & 12\\
+0 & 3 & -3 & -6\\
+-1 & 3 & -3 & -8
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -2 & 4 & 12\\
+0 & 3 & -3 & -6\\
+0 & 1 & 1 & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -2 & 4 & 12\\
+0 & 1 & -1 & -2\\
+0 & 1 & 1 & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -2 & 4 & 12\\
+0 & 1 & -1 & -2\\
+0 & 0 & 2 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 2 & 8\\
+0 & 1 & -1 & -2\\
+0 & 0 & 2 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 2\\
+0 & 1 & -1 & -2\\
+0 & 0 & 2 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 2\\
+0 & 1 & 0 & 1\\
+0 & 0 & 2 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 2\\
+0 & 1 & 0 & 1\\
+0 & 0 & 1 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 2\\
+0 & 1 & 0 & 1\\
+0 & 0 & 1 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\label{H_10531512}
+\matlabheadingthree{Ej 4}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & -1 & a\\
+2 & 1 & 3 & b\\
+1 & -4 & 9 & c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & -1 & a\\
+0 & -3 & 5 & b-2\,a\\
+1 & -4 & 9 & c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & -1 & a\\
+0 & -3 & 5 & b-2\,a\\
+0 & -6 & 10 & c-a
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & -1 & a\\
+0 & -3 & 5 & b-2\,a\\
+0 & 0 & 0 & 3\,a-2\,b+c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & -1 & a\\
+0 & 1 & -\frac{5}{3} & \frac{2\,a}{3}-\frac{b}{3}\\
+0 & 0 & 0 & 3\,a-2\,b+c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & \frac{7}{3} & \frac{2\,b}{3}-\frac{a}{3}\\
+0 & 1 & -\frac{5}{3} & \frac{2\,a}{3}-\frac{b}{3}\\
+0 & 0 & 0 & 3\,a-2\,b+c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & \frac{7}{3} & 0\\
+0 & 1 & -\frac{5}{3} & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+jalaba desde la matriz escalonada
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\label{H_3D97F326}
+\matlabheadingthree{Ej 5}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+2 & -2 & 5 & 4\\
+1 & 2 & -1 & -3\\
+0 & 2 & 2 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+0 & 0 & 1 & -2\\
+1 & 2 & -1 & -3\\
+0 & 2 & 2 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+0 & 0 & 1 & -2\\
+0 & 3 & -3 & -6\\
+0 & 2 & 2 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+0 & 3 & -3 & -6\\
+0 & 0 & 1 & -2\\
+0 & 2 & 2 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+0 & 1 & -1 & -2\\
+0 & 0 & 1 & -2\\
+0 & 2 & 2 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+0 & 1 & -1 & -2\\
+0 & 0 & 1 & -2\\
+0 & 0 & 4 & 5
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -1 & 2 & 3\\
+0 & 1 & -1 & -2\\
+0 & 0 & 1 & -2\\
+0 & 0 & 0 & 13
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & 1\\
+0 & 1 & -1 & -2\\
+0 & 0 & 1 & -2\\
+0 & 0 & 0 & 13
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & 1\\
+1 & 1 & 0 & -1\\
+0 & 0 & 1 & -2\\
+0 & 0 & 0 & 13
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A9 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 3\\
+1 & 1 & 0 & -1\\
+0 & 0 & 1 & -2\\
+0 & 0 & 0 & 13
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+inconsistente
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+correcto por rref
+\end{flushleft}
+\end{par}
+
+
+\label{H_14EFFA66}
+\matlabheadingthree{Ej 6}
+
+\begin{par}
+\begin{flushleft}
+a) falso -\textgreater{} tendria m renglones
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) falso -\textgreater{} uno inconsistente deberia tener una infinidad de soluciones
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+c) verdadero
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+d) verdadero
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+e) verdadero por transividad
+\end{flushleft}
+\end{par}
+
+
+\label{H_E234252F}
+\matlabheadingthree{Ej 7}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & c & 6\\
+a & 2\,b & 4\,c & 0\\
+a & 3\,b & 9\,c & 2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & c & 6\\
+0 & 3\,b & 3\,c & -6\\
+a & 3\,b & 9\,c & 2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & c & 6\\
+0 & 3\,b & 3\,c & -6\\
+0 & 4\,b & 8\,c & -4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & c & 6\\
+0 & b & c & -2\\
+0 & 4\,b & 8\,c & -4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & c & 6\\
+0 & b & c & -2\\
+0 & 0 & 4\,c & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & c & 6\\
+0 & b & c & -2\\
+0 & 0 & c & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & 0 & 5\\
+0 & b & c & -2\\
+0 & 0 & c & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & -b & 0 & 5\\
+0 & b & 0 & -3\\
+0 & 0 & c & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & 0 & 0 & 2\\
+0 & b & 0 & -3\\
+0 & 0 & c & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+la cuadratica seria 2-3x+x\textasciicircum{}2
+\end{flushleft}
+\end{par}
+
+
+\label{H_2D6DEB1C}
+\matlabheadingthree{Ej 8}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+\textbf{sin resolver}
+\end{flushleft}
+\end{par}
+
+
+\label{H_8892C841}
+\matlabheadingthree{Ej 9}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+2 & 1 & 5\\
+4 & -2 & t
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccc}
+2 & 1 & 5\\
+0 & -4 & t-10
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccc}
+2 & 0 & \frac{t}{4}+\frac{5}{2}\\
+0 & -4 & t-10
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & 0 & \frac{t}{8}+\frac{5}{4}\\
+0 & -4 & t-10
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & 0 & \frac{t}{8}+\frac{5}{4}\\
+0 & 1 & \frac{5}{2}-\frac{t}{4}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+\textbf{definitivamente no se que pedo}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) tampoco en esta
+\end{flushleft}
+\end{par}
+
+
+\label{H_CF1772B1}
+\matlabheadingthree{Ej 10}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 3 & 1 & a\\
+-1 & -2 & 1 & b\\
+3 & 7 & -1 & c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 3 & 1 & a\\
+0 & 1 & 2 & a+b\\
+3 & 7 & -1 & c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 3 & 1 & a\\
+0 & 1 & 2 & a+b\\
+0 & -2 & -4 & c-3\,a
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -5 & -2\,a-3\,b\\
+0 & 1 & 2 & a+b\\
+0 & -2 & -4 & c-3\,a
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -5 & -2\,a-3\,b\\
+0 & 1 & 2 & a+b\\
+0 & 0 & 0 & 2\,b-a+c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+2*b-a+c=0 para que sea consistente
+\end{flushleft}
+\end{par}
+
+
+\label{H_0618CE1C}
+\matlabheadingthree{Ej 11}
+
+\begin{par}
+\begin{flushleft}
+a) 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+ 3 variables y solo 2 ecuaciones sin solucion
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 1 & 1 & 1\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)    
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+2 variables 3 ecuaciones \textbf{(no se si tiene solucion unica)}
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+
+\label{H_1D6D04CA}
+\matlabheadingthree{Ej 12}
+
+\begin{par}
+\begin{flushleft}
+(3,4,-2) (como se si es la unica)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+5 & -1 & 2 & 7\\
+-2 & 6 & 9 & 0\\
+-7 & 5 & -3 & -7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -\frac{1}{5} & \frac{2}{5} & \frac{7}{5}\\
+-2 & 6 & 9 & 0\\
+-7 & 5 & -3 & -7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -\frac{1}{5} & \frac{2}{5} & \frac{7}{5}\\
+0 & \frac{28}{5} & \frac{49}{5} & \frac{14}{5}\\
+-7 & 5 & -3 & -7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -\frac{1}{5} & \frac{2}{5} & \frac{7}{5}\\
+0 & \frac{28}{5} & \frac{49}{5} & \frac{14}{5}\\
+0 & \frac{18}{5} & -\frac{1}{5} & \frac{14}{5}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -\frac{1}{5} & \frac{2}{5} & \frac{7}{5}\\
+0 & 1 & \frac{7}{4} & \frac{1}{2}\\
+0 & \frac{18}{5} & -\frac{1}{5} & \frac{14}{5}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & \frac{3}{4} & \frac{3}{2}\\
+0 & 1 & \frac{7}{4} & \frac{1}{2}\\
+0 & \frac{18}{5} & -\frac{1}{5} & \frac{14}{5}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & \frac{3}{4} & \frac{3}{2}\\
+0 & 1 & \frac{7}{4} & \frac{1}{2}\\
+0 & 0 & -\frac{13}{2} & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & \frac{3}{4} & \frac{3}{2}\\
+0 & 1 & \frac{7}{4} & \frac{1}{2}\\
+0 & 0 & 1 & -\frac{2}{13}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A8 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & \frac{3}{4} & \frac{3}{2}\\
+0 & 1 & 0 & \frac{10}{13}\\
+0 & 0 & 1 & -\frac{2}{13}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A9 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & \frac{21}{13}\\
+0 & 1 & 0 & \frac{10}{13}\\
+0 & 0 & 1 & -\frac{2}{13}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+\textbf{not a clue how to procede}
+\end{flushleft}
+\end{par}
+
+
+\label{H_A94473BA}
+\matlabheadingthree{Ej 13}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+2 & -1 & h\\
+-6 & -3 & k
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccc}
+2 & -1 & h\\
+0 & -6 & 3\,h+k
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -\frac{1}{2} & \frac{h}{2}\\
+0 & -6 & 3\,h+k
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -\frac{1}{2} & \frac{h}{2}\\
+0 & 1 & -\frac{h}{2}-\frac{k}{6}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & 0 & \frac{h}{4}-\frac{k}{12}\\
+0 & 1 & -\frac{h}{2}-\frac{k}{6}
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+\textbf{para todos, no?}
+\end{flushleft}
+\end{par}
+
+
+\label{H_2C27C561}
+\matlabheadingthree{Ej 14}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+0 & 1 & 4 & -5\\
+1 & 3 & 5 & -2\\
+3 & 7 & 7 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 3 & 5 & -2\\
+0 & 1 & 4 & -5\\
+3 & 7 & 7 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 3 & 5 & -2\\
+0 & 1 & 4 & -5\\
+0 & -2 & -8 & 12
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 3 & 5 & -2\\
+0 & 1 & 4 & -5\\
+0 & 0 & 0 & 2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -7 & 13\\
+0 & 1 & 4 & -5\\
+0 & 0 & 0 & 2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -7 & 0\\
+0 & 1 & 4 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+no tiene solucion
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+com rref
+\end{flushleft}
+\end{par}
+
+
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -3 & 4 & -4\\
+3 & -7 & 7 & -8\\
+-4 & 6 & -1 & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -3 & 4 & -4\\
+0 & 2 & -5 & 4\\
+-4 & 6 & -1 & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -3 & 4 & -4\\
+0 & 2 & -5 & 4\\
+0 & -6 & 15 & -9
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -3 & 4 & -4\\
+0 & 1 & -\frac{5}{2} & 2\\
+0 & -6 & 15 & -9
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -\frac{7}{2} & 2\\
+0 & 1 & -\frac{5}{2} & 2\\
+0 & -6 & 15 & -9
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -\frac{7}{2} & 2\\
+0 & 1 & -\frac{5}{2} & 2\\
+0 & 0 & 0 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -\frac{7}{2} & 0\\
+0 & 1 & -\frac{5}{2} & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+no tiene solucion
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+com rref
+\end{flushleft}
+\end{par}
+
+
+\begin{par}
+\begin{flushleft}
+c)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -3 & 8\\
+2 & 2 & 9 & 7\\
+0 & 1 & 5 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -3 & 8\\
+0 & 1 & 5 & -2\\
+2 & 2 & 9 & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -3 & 8\\
+0 & 1 & 5 & -2\\
+0 & 2 & 15 & -9
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -3 & 8\\
+0 & 1 & 5 & -2\\
+0 & 0 & 5 & -5
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -3 & 8\\
+0 & 1 & 5 & -2\\
+0 & 0 & 1 & -1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & -3 & 8\\
+0 & 1 & 0 & 3\\
+0 & 0 & 1 & -1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 5\\
+0 & 1 & 0 & 3\\
+0 & 0 & 1 & -1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 5\\
+0 & 1 & 0 & 3\\
+0 & 0 & 1 & -1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+si habemus respuesta
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+com rref
+\end{flushleft}
+\end{par}
+
+
+\label{H_02AAA586}
+\matlabheadingthree{Ej 15}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -4 & 1\\
+2 & -1 & -3\\
+-1 & -3 & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -4 & 1\\
+2 & -1 & -3\\
+0 & -7 & 5
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -4 & 1\\
+0 & 7 & -5\\
+0 & -7 & 5
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -4 & 1\\
+0 & 7 & -5\\
+0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -4 & 1\\
+0 & 1 & -\frac{5}{7}\\
+0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & 0 & -\frac{13}{7}\\
+0 & 1 & -\frac{5}{7}\\
+0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+\textbf{creo que si?? pero cual es el punto en x\_3}
+\end{flushleft}
+\end{par}
+
+
+\label{H_56631144}
+\matlabheadingthree{Ej 16}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & 1 & 4\\
+0 & 1 & -1 & 1\\
+1 & 3 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 2 & 1 & 4\\
+0 & 1 & -1 & 1\\
+0 & 1 & -1 & -4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 2\\
+0 & 1 & -1 & 1\\
+0 & 1 & -1 & -4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 3 & 2\\
+0 & 1 & -1 & 1\\
+0 & 0 & 0 & -5
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+el sistema es inconsistente entonces supongo que no?
+\end{flushleft}
+\end{par}
+
+
+\label{H_418257EC}
+\matlabheadingthree{Ej 17}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & h & -3\\
+-2 & 4 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & h & -3\\
+1 & -2 & -3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & h & -3\\
+0 & -h-2 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+ni siquiera puede inconsistentar el sistema 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+mismo que a)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+c)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+mismo que a)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+d)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+mismo que a)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+\textbf{seguro I am missing something que si pueda inconsistentar el sistema}
+\end{flushleft}
+\end{par}
+
+
+\label{H_6719AD61}
+\matlabheadingthree{Ej 18}
+
+\label{H_466FB2A3}
+\begin{par}
+\begin{flushleft}
+ni hay sistema presentado a continuacion
+\end{flushleft}
+\end{par}
+
+
+\label{H_07420CED}
+\matlabheadingthree{Ej 19}
+
+\label{H_AD9419F5}
+\begin{par}
+\begin{flushleft}
+tampoco hay sistema de ecuaciones a continuacion
+\end{flushleft}
+\end{par}
+
+
+\label{H_3BAF66ED}
+\matlabheadingthree{Ej 20}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+a & b & 0\\
+c & d & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+\textbf{not a clue}
+\end{flushleft}
+\end{par}
+
+
+\label{H_36826855}
+\matlabheadingthree{Ej 21}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & b & c & -5\\
+a & -b & c & 1\\
+4\,a & 2\,b & c & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & b & c & -5\\
+0 & -2\,b & 0 & 6\\
+4\,a & 2\,b & c & 7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & b & c & -5\\
+0 & -2\,b & 0 & 6\\
+0 & -2\,b & -3\,c & 27
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & b & c & -5\\
+0 & b & 0 & -3\\
+0 & -2\,b & -3\,c & 27
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & 0 & c & -2\\
+0 & b & 0 & -3\\
+0 & -2\,b & -3\,c & 27
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & 0 & c & -2\\
+0 & b & 0 & -3\\
+0 & 0 & -3\,c & 21
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & 0 & c & -2\\
+0 & b & 0 & -3\\
+0 & 0 & c & -7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A7 = 
+    $\displaystyle \left(\begin{array}{cccc}
+a & 0 & 0 & 5\\
+0 & b & 0 & -3\\
+0 & 0 & c & -7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+la parabola seria 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+p(x) = 5x\textasciicircum{}2 - 3x -7
+\end{flushleft}
+\end{par}
+
+
+\label{H_1579D558}
+\matlabheadingthree{Ej 22}
+
+\begin{par}
+\begin{flushleft}
+sin azufre:     1 ton = 5 m + 4 r
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+con azufre:    1 ton = 4 m + 2 r
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+planta M = 3 horas
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+planta R = 2 horas
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+\textbf{la neta no se como taclear este problema}
+\end{flushleft}
+\end{par}
+
+\label{H_203EE86F}
+\matlabheading{Tarea 2}
+
+
+\label{H_9CA92D12}
+\matlabheadingthree{Ej 1}
+
+\begin{par}
+\begin{flushleft}
+\includegraphics[width=\maxwidth{46.06121424987456em}]{image_2}
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+5 & 4\\
+-1 & 7\\
+9 & -3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+-3 & 0\\
+4 & 2\\
+5 & -7
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+a) \includegraphics[width=\maxwidth{5.3186151530356245em}]{image_3}
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+2 & 4\\
+3 & 9\\
+14 & -10
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)\includegraphics[width=\maxwidth{6.623181133968891em}]{image_4}
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+7 & 8\\
+2 & 16\\
+23 & -13
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+c) $A^T$
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+5 & -1 & 9\\
+4 & 7 & -3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+
+\label{H_C3154DAF}
+\matlabheadingthree{Ej 2}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a)    
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+9 & 8 & 13\\
+8 & -6 & 4\\
+-5 & 4 & 8
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{c}
+21\\
+6\\
+1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+c)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{c}
+-9\\
+-2\\
+1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+d)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+0 & 6 & -4\\
+-1 & -8 & 5\\
+4 & 2 & 9
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+
+\matlabheadingthree{Ej 3}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+       0              1       
+      -2              5       
+
+\end{matlaboutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+      -1              0              3       
+       5              7              2       
+
+\end{matlaboutput}
+\begin{par}
+\begin{flushleft}
+c)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+       1              0       
+       0              1       
+
+\end{matlaboutput}
+\begin{par}
+\begin{flushleft}
+d)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+       5              7              2       
+      27             35              4       
+
+\end{matlaboutput}
+\begin{par}
+\begin{flushleft}
+e)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+       0             -2       
+       1              5       
+
+\end{matlaboutput}
+
+\matlabheadingthree{Ej 4}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+     -12              2       
+      -9            -24       
+     -20            -24       
+
+\end{matlaboutput}
+\begin{par}
+\begin{flushleft}
+b) checa este pedo as well
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+c) checa este pedo
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+d)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+ans = 
+     -12             -9            -20       
+       2            -24            -24       
+
+\end{matlaboutput}
+
+\label{H_9E2F78A5}
+\matlabheadingthree{Ej 5}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+C = 
+    $\displaystyle \left(\begin{array}{ccc}
+15 & 16 & -24\\
+28 & 49 & 24\\
+-1 & 0 & -15
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+D = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & 9 & 17\\
+16 & 57 & -8\\
+8 & 6 & -9
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle -1$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle 9$
+\end{matlabsymbolicoutput}
+
+\label{H_A7751211}
+\matlabheadingthree{Ej 6}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+a_{1,1}  & a_{1,2}  & a_{1,3} \\
+a_{2,1}  & a_{2,2}  & a_{2,3} \\
+0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+B = 
+    $\displaystyle \left(\begin{array}{ccc}
+b_{1,1}  & b_{1,2}  & b_{1,3} \\
+b_{2,1}  & b_{2,2}  & b_{2,3} \\
+b_{3,1}  & b_{3,2}  & b_{3,3} 
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C = 
+    $\displaystyle \left(\begin{array}{ccc}
+a_{1,1} \,b_{1,1} +a_{1,2} \,b_{2,1} +a_{1,3} \,b_{3,1}  & a_{1,1} \,b_{1,2} +a_{1,2} \,b_{2,2} +a_{1,3} \,b_{3,2}  & a_{1,1} \,b_{1,3} +a_{1,2} \,b_{2,3} +a_{1,3} \,b_{3,3} \\
+a_{2,1} \,b_{1,1} +a_{2,2} \,b_{2,1} +a_{2,3} \,b_{3,1}  & a_{2,1} \,b_{1,2} +a_{2,2} \,b_{2,2} +a_{2,3} \,b_{3,2}  & a_{2,1} \,b_{1,3} +a_{2,2} \,b_{2,3} +a_{2,3} \,b_{3,3} \\
+0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C_31 = 
+    $\displaystyle 0$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C_32 = 
+    $\displaystyle 0$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C_33 = 
+    $\displaystyle 0$
+\end{matlabsymbolicoutput}
+
+\vspace{1em}
+
+\label{H_3022F90C}
+\matlabheadingthree{Ej 7}
+
+\begin{par}
+\begin{flushleft}
+Sea A una matriz de mxn tal que A = -A: Prueba que A = 0
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+a_{1,1}  & a_{1,2}  & a_{1,3} \\
+a_{2,1}  & a_{2,2}  & a_{2,3} \\
+a_{3,1}  & a_{3,2}  & a_{3,3} 
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+-a_{1,1}  & -a_{1,2}  & -a_{1,3} \\
+-a_{2,1}  & -a_{2,2}  & -a_{2,3} \\
+-a_{3,1}  & -a_{3,2}  & -a_{3,3} 
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+Sabemos que A=-A si son iguales termino a termino, esto quiere decir que 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a11=-a11 ... a33=-a33
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+esto solo se puede dar si todos los valores de A son iguales a 0
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+la matriz que tiene todas sus elementos iguales a 0 a es la matriz 0
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+entonces A = 0
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 8}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) 
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+B = 
+    $\displaystyle \left(\begin{array}{cc}
+c-3\,d & -d\\
+2\,a+d & a+b
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C = 
+    $\displaystyle \left(\begin{array}{cc}
+a & c-3\,d\\
+b & -d\\
+c & 2\,a+d\\
+d & a+b
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & -3\\
+0 & 1 & 0 & -1\\
+2 & 0 & 1 & 1\\
+1 & 1 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C1 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & -3\\
+0 & 1 & 0 & -1\\
+0 & 0 & -1 & 7\\
+1 & 1 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C2 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & -3\\
+0 & 1 & 0 & -1\\
+0 & 0 & -1 & 7\\
+0 & 1 & -1 & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C3 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & -3\\
+0 & 1 & 0 & -1\\
+0 & 0 & -1 & 7\\
+0 & 0 & -1 & 5
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C4 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 1 & -3\\
+0 & 1 & 0 & -1\\
+0 & 0 & -1 & 7\\
+0 & 0 & 0 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C5 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 4\\
+0 & 1 & 0 & -1\\
+0 & 0 & -1 & 7\\
+0 & 0 & 0 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C6 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 4\\
+0 & 1 & 0 & -1\\
+0 & 0 & 1 & -7\\
+0 & 0 & 0 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C7 = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & 0 & 0 & 4\\
+0 & 1 & 0 & -1\\
+0 & 0 & 1 & -7\\
+0 & 0 & 0 & 1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+a=4d     b=-1d     c=-7    d=0     dudo de esta respuesta
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+2 & 2\\
+-6 & 2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -1 & 0 & 0 & 2\\
+0 & 1 & -1 & 0 & 2\\
+0 & 0 & 1 & -1 & -6\\
+-1 & 0 & 0 & 1 & 2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A1 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & -1 & 0 & 0 & 2\\
+0 & 1 & -1 & 0 & 2\\
+0 & 0 & 1 & -1 & -6\\
+0 & -1 & 0 & 1 & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A2 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & -1 & 0 & 4\\
+0 & 1 & -1 & 0 & 2\\
+0 & 0 & 1 & -1 & -6\\
+0 & -1 & 0 & 1 & 4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A3 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & -1 & 0 & 4\\
+0 & 1 & -1 & 0 & 2\\
+0 & 0 & 1 & -1 & -6\\
+0 & 0 & -1 & 1 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A4 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & -1 & 0 & 4\\
+0 & 1 & -1 & 0 & 2\\
+0 & 0 & 1 & -1 & -6\\
+0 & 0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A5 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & -1 & 0 & 4\\
+0 & 1 & 0 & -1 & -4\\
+0 & 0 & 1 & -1 & -6\\
+0 & 0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+A6 = 
+    $\displaystyle \left(\begin{array}{ccccc}
+1 & 0 & 0 & -1 & -2\\
+0 & 1 & 0 & -1 & -4\\
+0 & 0 & 1 & -1 & -6\\
+0 & 0 & 0 & 0 & 0
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+solucion alternativa
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+eq1 = 
+    $\displaystyle a-b=2$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+eq2 = 
+    $\displaystyle b-c=2$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+eq3 = 
+    $\displaystyle c-d=-6$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+eq4 = 
+    $\displaystyle d-a=2$
+\end{matlabsymbolicoutput}
+\begin{matlaboutput}
+S = 
+    a: [1x1 sym]
+    b: [1x1 sym]
+    c: [1x1 sym]
+    d: [1x1 sym]
+
+\end{matlaboutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle -2$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle -4$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle -6$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle 0$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+todo correcto
+\end{flushleft}
+\end{par}
+
+
+\label{H_32D8FF25}
+\matlabheadingthree{Ej 9}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+C = 
+    $\displaystyle \left(\begin{array}{ccc}
+-12 & 2 & 11\\
+0 & 6 & -10
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cccc}
+1 & -5 & 4 & 0\\
+2 & 1 & 0 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+1 & 2\\
+-5 & 1\\
+4 & 0\\
+0 & 6
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+
+\matlabheadingthree{Ej 10}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+-1 & 3 & 3\\
+-2 & -1 & -4
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{cc}
+2 & 0\\
+1 & -1
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+ps se armo
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 11}
+
+\begin{par}
+\begin{flushleft}
+demo que no se hacer porque no se como son las matrices simetricas
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 12}
+
+\begin{par}
+\begin{flushleft}
+11 pero de diagonales
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 13}
+
+\begin{par}
+\begin{flushleft}
+11
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 14}
+
+\begin{par}
+\hfill \break
+\end{par}
+
+\begin{matlabsymbolicoutput}
+A = 
+    $\displaystyle \left(\begin{array}{ccc}
+a_{1,1}  & a_{1,2}  & a_{1,3} \\
+a_{2,1}  & a_{2,2}  & a_{2,3} \\
+a_{3,1}  & a_{3,2}  & a_{3,3} 
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+para que sean iguales tienen que ser iguales todos sus terminos
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+un ejemplo de sus terminos es aij=k*aji
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+\textbf{??}
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 15}
+
+\begin{par}
+\begin{flushleft}
+11
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+
+\matlabheadingthree{Ej 16}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{cc}
+2 & 2\\
+0 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+-1 & -6 & -2\\
+0 & 6 & 10
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+c) \textbf{interesante}
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+C = 
+    $\displaystyle \left(\begin{array}{ccc}
+2\,a & 3\,b & c\\
+5\,a & 7\,b & 4\,c
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+c11 = 
+    $\displaystyle 2\,a$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+c12 = 
+    $\displaystyle 3\,b$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+c13 = 
+    $\displaystyle c$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+c21 = 
+    $\displaystyle 5\,a$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+c22 = 
+    $\displaystyle 7\,b$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+c23 = 
+    $\displaystyle 4\,c$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+C23 = 
+    $\displaystyle 4\,c$
+\end{matlabsymbolicoutput}
+
+\matlabheadingthree{Ej 17 }
+
+\begin{par}
+\begin{flushleft}
+despejamos la matriz que queremos el pedo radica en qeu se multiplican y no se como \textbf{dividir matrices}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+A = 
+       1              2       
+       4             10       
+
+\end{matlaboutput}
+\begin{par}
+\begin{flushleft}
+b)
+\end{flushleft}
+\end{par}
+
+\begin{matlaboutput}
+A = 
+      16/5           -3/5     
+       2/5            9/5     
+
+\end{matlaboutput}
+
+\matlabheadingthree{Ej 18}
+
+
+\matlabheadingthree{Ej 19}
+
+
+\label{H_EFF10B42}
+\matlabheadingthree{Ej 20}
+
+
+\label{H_638BB5A6}
+\matlabheadingthree{Ej 21}
+
+
+\label{H_F94BA146}
+\matlabheadingthree{Ej 22}
+
+
+\label{H_13F8AC55}
+\matlabheadingthree{Ej 23}
+
+
+\label{H_94AA8155}
+\matlabheadingthree{Ej 24}
+
+
+\label{H_A8532C99}
+\matlabheadingthree{Ej 25}
+
+
+\label{H_34FB1CDD}
+\matlabheadingthree{Ej 26}
+
+
+\label{H_8C61C081}
+\matlabheadingthree{Ej 27}
+
+
+\label{H_DBB3B193}
+\matlabheadingthree{Ej 28}
+
+
+\label{H_55CB4F74}
+\matlabheadingthree{Ej 29}
+
+
+\label{H_8CF77302}
+\matlabheadingthree{Ej 30}
+
+
+\label{H_AD3BF2D3}
+\matlabheadingthree{Ej 31}
+
+
+\label{H_8D97FE59}
+\matlabheadingthree{Ej 32}
+
+
+\label{H_73258759}
+\matlabheadingthree{Ej 33}
+
+
+\label{H_15767BFA}
+\matlabheadingthree{Ej 34}
+
+
+\matlabheading{Ejercicios de Kolman-Hill}
+
+\matlabheadingthree{1.1}
+
+\begin{par}
+\begin{flushleft}
+1-14 son sistemas lineales por metodo de eliminacion gaussiana, no los hare
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+15 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+16 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+17 -
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+18 - entonces porque metodo?
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+19 - solo expandes mas la matriz 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+20 - igual que la 19
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+21 - no hay figura 1.2
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+22 - a) 0 b) ? c) ? 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+23 - mismo que el ultimo de la tarea 2
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+24 - 26 son del tipo del 23
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+27 - ya lo resolvi en la tarea 1
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+28 - 23
+\end{flushleft}
+\end{par}
+
+\matlabheadingthree{Ejericios teoricos}
+
+\begin{par}
+\begin{flushleft}
+T.1 - Demuestra que el sistema lineal que se obtiene al intercambiar dos ecuaciones en A tiene las mismas soluciones que A
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.2 - Demuestre que el sistema lineal obtenido al remplazar una ecuacion en A por un multiplo constante de la ecuacion diferente de cero, tiene exactamente las mismas soluciones que A
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.3 - Demuestre que el sistema lineal que se obtiene al remplazar una ecuacion en A por ella misma mas un multiplo de otra ecuacion en A tiene exactamente las mismas soluciones que A
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.4 - mismo que en tarea 1
+\end{flushleft}
+\end{par}
+
+\matlabheadingthree{1.2}
+
+\begin{par}
+\begin{flushleft}
+1- determinar valores especificos sin hacer toda la matriz
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+2 - sistema de ecuaciones sencillo presentado de forma medio rara
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+3 - 2
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+4 - 7 son operaciones de matrices sencillas
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+8 - combinacion lineal \textbf{?}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+9 - 8 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+10 - multiplicar una constante por una matriz de forma que te de otra, mas o menos se como hacerla pero vale la pena hacerla \textbf{ !!}
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+11 - 4-7
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+12 - 11
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+13 - Obtener una matriz a partir de una suma de matrices !!!
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+14-15 son 13 pero con vectores
+\end{flushleft}
+\end{par}
+
+\matlabheadingthree{Ej teoricos}
+
+\begin{par}
+\begin{flushleft}
+T.1 - Demuestra que la suma y la diferencia de dos matrices diagonales es una matriz diagonal
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.2 - Demuestre que la suma y la diferencia de dos matrices escalares es una matriz escalar
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.3 - 4-7 pero simbolico
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.4 - sea 0 la matriz de n x n tal que todas sus entradas son cero. Demuestre que si k es un numero real y a es una matriz de n x n tal qeu kA=0 entonces k=0 o A=0
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.5 -
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) demuestre que la suma y la diferencia de dos matrices triangulares superiores es una matriz triangular superior
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) demuestre lo que a) pero con inferiores
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+c) demo que si una matriz es inferior y superior al mismo tiempo entonces es diagnoal
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.6 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) demo que si A es superior A\textasciicircum{}t es inferior
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) viceversa de a)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.7 - cuales son las entradas de la diagonal principal de A-A\textasciicircum{}t si A es matriz cuadrada
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.8 - si x es un n vector demuestre que x+0=x
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.9 - haga una lista de todos los posibles 2 vectores binarios ¿cuantos hay?
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.10 - T.9 pero con 3 vector
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.11 - T.9 pero con 4 vector
+\end{flushleft}
+\end{par}
+
+\matlabheadingthree{1.3}
+
+\vspace{1em}
+
+\matlabheadingthree{Ej teoricos}
+
+\begin{par}
+\begin{flushleft}
+T.1 - sea x un n vector 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) es posible que x punto x sea negativo?
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) si x punto x = 0, cual es el valor de x?
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.2 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) demuestre que a punto b = b punto a
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) demuestre que (a + b) punto c = a punto c + b punto c
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+c) demuestre que (ka) punto b = a punto (kb) = k(a punto b)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.3 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) demuestre uqe si A tiene una dila de ceros, AB tiene una fila de ceros
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) demuestre que si B tienen una columna de ceros, AB tiene una columna de ceros
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.4 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+Demuestre que el producto de dos matrices diagonales es una matriz diagnoal
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.5 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+demuestre que el producto de dos matrices escalares es una matriz escalar
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.6 -
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) demuester que el producto de dos matrices superiores es una matriz superior
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+ya existe en algun otro lado
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) demuestre que el prducto de dos matrices inferiores es una matriz inferior
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.7 - sean A y B matrices diagonales de nxn ¿es cierto que AB = BA?
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.8 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) sea a una matriz de 1xn y B una matriz de nxp demuestre que el producto de matrices aB puede escribirse como una combinacion lineal de las filas de B en los qeu los coeficientes cson las entradas de a
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) sean
+\end{flushleft}
+\end{par}
+
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+1 & -2 & 3
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabsymbolicoutput}
+ans = 
+    $\displaystyle \left(\begin{array}{ccc}
+2 & 1 & -4\\
+-3 & -2 & 3\\
+4 & 5 & -2
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{par}
+\begin{flushleft}
+escriba aB como una combinacion lineal de las filas de B
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.9 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) demuester que al jesima columna del producto de matrices AB es igual al producto de matrices A col\_j(B)
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) demuestre que el iesima fila del producto de matrices AB es igual al producto de matrices fil\_i(A)B
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.10 - sea A una matriz de mxn cuyas entradas son numeros reales, demuestre que si AA\textasciicircum{}t= 0 entonces A=0
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.11 - T.13 son de notacion sigma que ni al caso
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+T.14 - 
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+a) si u y v se consideran matrices de nx1 demuestre que u punto v = u\textasciicircum{}tv
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+b) lo mismo que a) pero u punto v = uv\textasciicircum{}t
+\end{flushleft}
+\end{par}
+
+\begin{par}
+\begin{flushleft}
+c) si u se considerara una matriz de 1xn y v una matriz de nx1 demuestre que u punto v= uv
+\end{flushleft}
+\end{par}
+
+
+\vspace{1em}
+
+\label{H_A129AEC7}
+\matlabheading{Funciones}
+
+\end{document}
